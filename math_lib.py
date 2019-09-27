@@ -6,14 +6,17 @@ import argparse
 
 def list_mean(L):
     
+    # handle None List
     if L is None:
         return None
         sys.exit(1)
     
+    # handle empty list
     if len(L) == 0:
         return None
         sys.exit(1)
-             
+   
+    # perform mean calculation
     else: 
         mean = sum(L)/len(L)
         return mean
@@ -21,14 +24,17 @@ def list_mean(L):
 
 def list_stdev(V):
    
+    # handle None List
     if L is None:
         return None
         sys.exit(1)
 
+    # handle empty list
     if len(L) == 0:
         return None
         sys.exit(1)
-        
+     
+    #perform stdev calculation
     else:
         stdev = math.sqrt(sum([(mean(V)-x)**2 for x in L]) / len(L))
         return stdev
