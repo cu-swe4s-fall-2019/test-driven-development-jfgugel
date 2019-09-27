@@ -24,6 +24,10 @@ class TestMathLib(unittest.TestCase)
     def mean_test_easy_calc(self):
         r = math_lib.list_mean([5, 5, 5, 5, 5])
         self.assertEqual(r, 5)
+        
+    def stdev_test_easy_calc(self):
+        r = math_lib.list_mean([5, 5, 5, 5])
+        self.assertEqual(r, 0)
     
 
 if __name__ == '__main__'
