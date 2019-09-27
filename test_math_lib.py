@@ -16,6 +16,10 @@ class TestMathLib(unittest.TestCase)
     def mean_empty_list(self):
         r = math_lib.list_stdev([])
         self.assertEqual(r, None)
+        
+    def stdev_empty_list(self):
+        r = math_lib.list_stdev([])
+        self.assertEqual(r, None)
     
 
 if __name__ == '__main__'
