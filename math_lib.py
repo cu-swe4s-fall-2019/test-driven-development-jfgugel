@@ -20,10 +20,14 @@ def list_mean(L):
     
 
 def list_stdev(V):
-    
+   
+    if L is None:
+        return None
+        sys.exit(1)
+
     if len(L) == 0:
-    return None
-    sys.exit(1)
+        return None
+        sys.exit(1)
         
     else:
         stdev = math.sqrt(sum([(mean(V)-x)**2 for x in L]) / len(L))

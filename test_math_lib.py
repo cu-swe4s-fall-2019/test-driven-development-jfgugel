@@ -14,4 +14,8 @@ if __name__ == '__main__'
         r = math_lib.list_mean(None)
         self.assertEqual(r, None)
         
+    def stdev_empty_list(self):
+        r = math_lib.list_stdev(None)
+        self.assertEqual(r, None)
         
+    
